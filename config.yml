@@ -1,0 +1,13 @@
+bookmarks:
+- ~/program/oss
+- ~/program/coffee
+dirs:
+- dir: /home/srikanth/program/oss
+  timestamp: 1703481684
+  opened: 12
+- dir: /home/srikanth/program/coffee
+  timestamp: 1703481698
+  opened: 21
+- dir: /home/srikanth/program/oss/kyverno
+  timestamp: 1703481725
+  opened: 1
