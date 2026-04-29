@@ -11,3 +11,6 @@ dirs:
 - dir: /home/srikanth/program/oss/kyverno
   timestamp: 1703481725
   opened: 1
+- dir: $HOME/programs/tmux-sessionizer
+  timestamp: 1777461669
+  opened: 2

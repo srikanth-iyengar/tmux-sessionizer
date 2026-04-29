@@ -71,7 +71,8 @@ func CreateSession(m *Model, dir *string) bool {
 		dir = &[]string(selected)[0]
 	}
 	sessionName := filepath.Base(*dir)
-	cmd := exec.Command("tmux", "new-session", "-d", "-c", *dir, "-s", sessionName)
+	cmd := exec.Command("tmux", "new-session", "-d", "-c", os.ExpandEnv(*dir), "-s", sessionName)
+	cmd.Env = append(cmd.Env, cmd.Environ()...)
 
 	if err := cmd.Run(); err != nil {
 		return false
